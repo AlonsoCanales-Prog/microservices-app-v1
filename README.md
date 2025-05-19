@@ -34,7 +34,7 @@ Cada microservicio cumple con una responsabilidad única y está desacoplado del
 
 Cada servicio tiene una **interfaz bien definida** (API REST) y puede evolucionar de forma independiente.
 
-![Servicios Independientes](img/ser1.png)
+![Servicios Independientes](img/ser1.jpg)
 
 ---
 
@@ -42,7 +42,7 @@ Cada servicio tiene una **interfaz bien definida** (API REST) y puede evoluciona
 
 Cada microservicio ha sido **empaquetado en su propio contenedor Docker**, incluyendo su código fuente, dependencias y configuración. Esto asegura portabilidad y consistencia en todos los entornos.
 
-![Dockerizacion](img/dock.png)
+![Dockerizacion](img/dock.jpg)
 
 ---
 
@@ -69,9 +69,9 @@ Los contenedores Docker están orquestados mediante **Kubernetes**, lo cual perm
 - Se ha integrado **Istio** como service mesh para visibilidad de tráfico, control de políticas y seguridad.
 - Se recopilan logs y métricas con herramientas como **Grafana**, **Prometheus** y **Azure Monitor** para detectar anomalías y optimizar rendimiento.
 
-![Monitorizacion](img/mon1.png)
-![Monitorizacion](img/mon2.png)
-![Monitorizacion](img/mon3.png)
+![Monitorizacion](img/mon1.jpg)
+![Monitorizacion](img/mon2.jpg)
+![Monitorizacion](img/mon3.jpg)
 
 ---
 
@@ -81,7 +81,7 @@ Los contenedores Docker están orquestados mediante **Kubernetes**, lo cual perm
 - El servidor en **DigitalOcean** está configurado para hacer **auto-deploy** al detectar cambios en la rama principal.
 - Se incluyen etapas de **build, test, deploy y rollback automático** ante fallos.
 
-![Automatizacion](img/auto.png)
+![Automatizacion](img/auto.jpg)
 
 ---
 
@@ -91,8 +91,8 @@ Los contenedores Docker están orquestados mediante **Kubernetes**, lo cual perm
 - Comunicaciones entre microservicios cifradas mediante **HTTPS y JWT**.
 - Validación de entradas y sanitización para prevenir ataques comunes.
 
-![Seguridad](img/cqrs1.png)
-![Seguridad](img/cqrs2.png)
+![Seguridad](img/cqrs1.jpg)
+![Seguridad](img/cqrs2.jpg)
 
 ---
 
@@ -114,7 +114,7 @@ Esto nos permite fortalecer el sistema contra fallos reales y garantizar una exp
 - La arquitectura CQRS permite separar comandos y consultas, optimizando rendimiento.
 - Se siguen **principios SOLID** para garantizar mantenibilidad y evolución del código.
 
-![Escalabilidad](img/dis.png)
+![Escalabilidad](img/dis.jpg)
 
 ---
 
